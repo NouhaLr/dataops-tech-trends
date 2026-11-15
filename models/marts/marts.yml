@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: stories_clean
+    description: Stories that passed every quality rule
+    columns:
+      - name: story_id
+        data_tests:
+          - unique
+          - not_null
+      - name: title
+        data_tests:
+          - not_null
+
+  - name: stories_by_hour
+    description: Activity per hour of the day (UTC)
+    columns:
+      - name: hour_utc
+        data_tests:
+          - unique

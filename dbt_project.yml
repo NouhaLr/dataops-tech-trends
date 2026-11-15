@@ -1,0 +1,15 @@
+name: tech_trends
+version: "1.0"
+profile: tech_trends
+
+model-paths: ["models"]
+test-paths: ["data_tests"]
+
+models:
+  tech_trends:
+    staging:
+      +materialized: view
+    intermediate:
+      +materialized: view
+    marts:
+      +materialized: table

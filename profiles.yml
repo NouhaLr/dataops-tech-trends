@@ -1,0 +1,7 @@
+tech_trends:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: warehouse.duckdb
+      threads: 1

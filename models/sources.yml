@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: raw
+    description: Raw data loaded as-is by the ingestion scripts
+    tables:
+      - name: hn_stories
+        description: One row per Hacker News story, loaded by run_ingestion.py
